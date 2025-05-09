@@ -18,7 +18,7 @@ Este sistema foi criado para ser utilizado em aulas práticas na ETEC de Hortol�
 ## Principais Funcionalidades
 
 - **Salas e Lobby:** Criação de salas com código único, entrada de jogadores com apelido, divisão automática em equipes.
-- **Comunicação em Tempo Real:** Chat e atualizações de turno via WebSockets.
+- **Comunicação em Tempo Real:** Chat e atualizações de turno com Firestore.
 - **Gestão de Turnos:** Apenas a equipe da vez pode enviar mensagens; indicador claro de "É a vez da Equipe X".
 - **Feedback da IA:** Avaliação automática das respostas, com pontuação e comentários inline no chat.
 - **Placar:** Pontuação por equipe exibida em tempo real, com bônus para soluções completas.
@@ -26,19 +26,11 @@ Este sistema foi criado para ser utilizado em aulas práticas na ETEC de Hortol�
 
 ## Tecnologias Utilizadas
 
-- **Frontend:** React (Vite), Tailwind CSS
-- **Comunicação em Tempo Real:** WebSockets (ex: Socket.IO)
-- **IA:** OpenAI API (GPT-4o ou o4-mini)
-- **Backend (opcional):** Node.js/Express ou Firebase Functions
-- **Hospedagem:** Firebase
-
-## Requisitos Não Funcionais
-
-- **Desempenho:** Atualizações em tempo real (< 200 ms de latência)
-- **Escalabilidade:** Frontend sem estado; servidor WebSocket escalável
-- **Segurança:** Códigos de sala imprevisíveis, validação de mensagens e regras de turno no servidor
-- **Acessibilidade:** Chat acessível por teclado, indicadores de foco
-- **UX:** Layout responsivo, temas distintos para equipes (ex: azul vs. laranja)
+- **Frontend:** React (Vite) e Tailwind CSS
+- **Comunicação em "Tempo Real" e Database:** Firebase Firestore
+- **IA:** OpenAI API (GPT o4-mini)
+- **Backend:** Firebase Functions
+- **Hospedagem:** Firebase Hosting
 
 ## Como Contribuir
 
@@ -50,4 +42,4 @@ Este sistema foi criado para ser utilizado em aulas práticas na ETEC de Hortol�
 
 ---
 
-Este projeto é mantido para fins didáticos e de inovação no ensino técnico. Dúvidas ou sugestões? Entre em contato com o professor responsável.
+Este projeto é mantido para fins didáticos e de inovação no ensino técnico. Dúvidas ou sugestões? Entre em contato com o professor responsável (eu).
